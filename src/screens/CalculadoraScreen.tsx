@@ -40,8 +40,6 @@ export const CalculadoraScreen = () => {
       }else{
         setNumero(numero+numeroTexto);
       }
-
-
     }else{
       setNumero(numero + numeroTexto);
     }
@@ -97,18 +95,18 @@ export const CalculadoraScreen = () => {
   
   const btnMultiplicar = () => {
     cambiarNumPorAnterior();
-    ultimaOperacion.current = Operadores.dividir;
+    ultimaOperacion.current = Operadores.multiplicar;
   } 
 
   
   const btnRestar = () => {
     cambiarNumPorAnterior();
-    ultimaOperacion.current = Operadores.dividir;
+    ultimaOperacion.current = Operadores.restar;
   }
 
   const btnSumar = () => {
     cambiarNumPorAnterior();
-    ultimaOperacion.current = Operadores.dividir;
+    ultimaOperacion.current = Operadores.sumar;
   } 
 
   return (
